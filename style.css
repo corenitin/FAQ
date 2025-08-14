@@ -1,0 +1,28 @@
+#mainDiv {
+    background-image: url(assets/images/background-pattern-desktop.svg);
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+    transition:  0.8s ease;
+}
+
+#answer1.show,  #answer2.show, #answer3.show, #answer4.show{
+    max-height: 200px;
+    padding-top: 10px;
+}
+
+@media (min-width:320px) and (max-width:426px) {
+    #mainDiv {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width:427px) and (max-width: 768px) {
+    #mainDiv {
+        background-image: url(assets/images/background-pattern-desktop.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/images/icon-star.svg" type="image/x-icon">
+  <link href="src/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>FAQ-ACCORDION-MAIN</title>
+</head>
+
+<body class="bg-purple-200 m-0 p-0">
+  <div id="mainDiv" class="flex justify-center items-center h-[100vh] md:bg-size-[100%] md:bg-no-repeat">
+    <div id="container"
+      class="bg-white w-80 p-4 rounded-3xl hover:shadow-lg duration-300 delay-150 flex flex-col gap-2 md:w-120  md:max-h-screen md:p-8">
+      <div class="flex justify-items-start gap-5">
+        <img class="w-8" src="assets/images/icon-star.svg" alt="icon-star" />
+        <h1 class="text-purple-950 font-work-sans font-bold text-3xl lg:text-5xl">
+          FAQs
+        </h1>
+      </div>
+      <div class="mt-5 lg:mt-10">
+        <div id="question1Div" onclick="" class="flex justify-between cursor-pointer items-center">
+          <h3 class="font-work-sans text-sm text-purple-950 hover:text-purple-600 font-[600] mt-2">
+            What is the difference between "==" and "===" in JavaScript?
+          </h3>
+          <img id="plus-icon1" src="" alt="plus icon" />
+        </div>
+        <div id="answer1" class="overflow-hidden max-h-0">
+          <p class="font-work-sans font-[600] text-purple-300 text-sm">"==" compares values after type conversion (loose
+            equality), while "===" compares both value and type without type conversion (strict equality).</p>
+        </div>
+      </div>
+      <hr class="opacity-10 mt-4">
+      <div>
+        <div id="question2Div" onclick="" class="flex justify-between cursor-pointer items-center">
+          <h3 class="font-work-sans text-sm text-purple-950 hover:text-purple-600 font-[600] mt-2">
+            Which planet is known as the "Red Planet"?
+          </h3>
+          <img id="plus-icon2" src="" alt="" />
+        </div>
+        <div id="answer2" class="overflow-hidden max-h-0">
+          <p class="font-work-sans font-[600] text-purple-300 text-sm">Mars.</p>
+        </div>
+      </div>
+      <hr class="opacity-10 mt-4">
+      <div>
+        <div id="question3Div" onclick="" class="flex justify-between cursor-pointer items-center">
+          <h3 class="font-work-sans text-sm text-purple-950 hover:text-purple-600 font-[600] mt-2 mr-2">
+            If 5 machines take 5 minutes to make 5 items, how long will 100 machines take to make 100 items?
+          </h3>
+          <img id="plus-icon3" src="" alt="" />
+        </div>
+        <div id="answer3" class="overflow-hidden max-h-0">
+          <p class="font-work-sans font-[600] text-purple-300 text-sm">5 minutes — because each machine makes 1 item in
+            5 minutes, so scaling the number of machines scales output, not time.</p>
+        </div>
+      </div>
+      <hr class="opacity-10 mt-4">
+      <div>
+        <div id="question4Div" onclick="" class="flex justify-between cursor-pointer items-center">
+          <h3 class="font-work-sans text-sm text-purple-950 hover:text-purple-600 font-[600] mt-2 mr-2">
+            What is the only mammal capable of true flight?
+          </h3>
+          <img id="plus-icon4" src="" alt="" />
+        </div>
+        <div id="answer4" class="overflow-hidden max-h-0">
+          <p class="font-work-sans font-[600] text-purple-300 text-sm">The bat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script defer type="module" src="script.js"></script>
+</body>
+
+</html>
